@@ -1,0 +1,14 @@
+<div>
+  <h1><%=name %></h1>
+  <div class="result wrapper">
+    <% questions.forEach(question => { %>
+    <p>
+      <%=question.question %> <% question.answers.forEach(answer => { %>
+
+      <span><%=answer.value %></span>
+      <% }) %>
+    </p>
+
+    <% }) %>
+  </div>
+</div>

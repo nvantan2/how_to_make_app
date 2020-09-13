@@ -1,0 +1,99 @@
+.menu_wrapper {
+  min-height: 100vh;
+  z-index: 999;
+  background-color: #f4f4f4;
+  &.open {
+    .head_menu {
+      z-index: 8001;
+      .i-menu {
+        &:hover {
+          a {
+            i {
+              background: transparent;
+              &::before {
+                transform: scale(1.2) rotateZ(45deg);
+                top: 0;
+              }
+              &::after {
+                bottom: 0;
+                transform: scale(1.2) rotateZ(-45deg);
+              }
+            }
+          }
+        }
+        a {
+          i {
+            background: transparent;
+            &::before {
+              transform: rotateZ(45deg);
+              top: 0;
+            }
+            &::after {
+              bottom: 0;
+              transform: rotateZ(-45deg);
+            }
+          }
+        }
+      }
+    }
+  }
+  .head_menu {
+    position: fixed;
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+    padding: 0 20px;
+    justify-content: space-between;
+    top: 30px;
+    .i-menu {
+      &:hover {
+        a > i {
+          &::before {
+            top: -10px;
+          }
+          &::after {
+            bottom: -10px;
+          }
+        }
+      }
+      a {
+        display: inline-block;
+        width: 25px;
+        height: 27px;
+        cursor: pointer;
+        color: #959da0;
+        letter-spacing: 0.06em;
+        i {
+          position: relative;
+          display: inline-block;
+          width: 25px;
+          height: 4px;
+          font: bold 12px/0.4 "Lato", sans-serif;
+          text-transform: uppercase;
+          background: #959da0;
+          transition: all 0.2s ease-out;
+          &::before,
+          &::after {
+            content: "";
+            width: 25px;
+            height: 4px;
+            background: #959da0;
+            position: absolute;
+            left: 0;
+            transition: all 0.2s ease-out;
+          }
+          &::before {
+            top: -8px;
+          }
+          &::after {
+            bottom: -8px;
+          }
+        }
+        span {
+          font-size: 14px;
+          padding: 5px 5px 5px 35px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "self-quiz",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@sendgrid/mail": "^7.2.1",
+    "@zeit/next-sass": "^1.0.1",
+    "axios": "^0.19.2",
+    "bluebird": "^3.7.2",
+    "crypto": "^1.0.1",
+    "dotenv": "^8.2.0",
+    "dotenv-safe": "^8.2.0",
+    "ejs": "3.1.2",
+    "inline-css": "^2.6.3",
+    "next": "9.4.4",
+    "node-sass": "^4.14.1",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "sass": "^1.26.10",
+    "uniqid": "^5.2.0",
+    "yup": "^0.29.1"
+  },
+  "devDependencies": {
+    "@types/uniqid": "^5.2.0",
+    "@types/yup": "^0.29.3"
+  }
+}
